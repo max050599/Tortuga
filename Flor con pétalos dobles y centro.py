@@ -1,0 +1,21 @@
+import turtle
+
+t = turtle.Turtle()
+t.speed(0)
+t.color("purple")
+for i in range(18):
+    t.begin_fill()
+    t.circle(80,60)
+    t.left(120)
+    t.circle(80,60)
+    t.left(120)
+    t.end_fill()
+    t.right(20)
+t.color("yellow")
+t.penup()
+t.goto(0,-30)
+t.pendown()
+t.begin_fill()
+t.circle(30)
+t.end_fill()
+turtle.done()
